@@ -1,0 +1,1799 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  
+  
+  <meta name="generator" content="Wowchemy 5.0.0-beta.0 for Hugo">
+  
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Ayush Agarwal">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="A note on Sternbergs technique and evolution of language through embeded cognition">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://ayushmclaren.github.io/post/cpandl/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg==" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+    
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.css">
+
+  
+
+
+
+
+  
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://ayushmclaren.github.io/post/cpandl/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="Ayush Agarwal">
+  <meta property="og:url" content="https://ayushmclaren.github.io/post/cpandl/">
+  <meta property="og:title" content="On concept, perception and language | Ayush Agarwal">
+  <meta property="og:description" content="A note on Sternbergs technique and evolution of language through embeded cognition"><meta property="og:image" content="https://ayushmclaren.github.io/post/cpandl/featured.jpeg">
+  <meta property="twitter:image" content="https://ayushmclaren.github.io/post/cpandl/featured.jpeg"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2020-06-10T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2020-06-10T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://ayushmclaren.github.io/post/cpandl/"
+  },
+  "headline": "On concept, perception and language",
+  
+  "image": [
+    "https://ayushmclaren.github.io/post/cpandl/featured.jpeg"
+  ],
+  
+  "datePublished": "2020-06-10T00:00:00Z",
+  "dateModified": "2020-06-10T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Ayush Agarwal"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ayush Agarwal",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://ayushmclaren.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "A note on Sternbergs technique and evolution of language through embeded cognition"
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>On concept, perception and language | Ayush Agarwal</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.js"></script>
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Ayush Agarwal</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Ayush Agarwal</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Just Me</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#publications"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#experience"><span>Experience</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Musings</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/media/cv.pdf"><span>Vitae</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<div class="article-container pt-3">
+  <h1>On concept, perception and language</h1>
+
+  
+  <p class="page-subtitle">A note on Sternbergs technique and evolution of language through embeded cognition</p>
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  
+  <span ><a href="/author/ayush-agarwal/">Ayush Agarwal</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Jun 10, 2020
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    17 min read
+  </span>
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/category/psychology/">Psychology</a></span>
+  
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="https://docs.google.com/document/d/1Y_-1XJruqTdNPwmMp6WfTLYeSnfceGDv8I7-9gcYg5I/edit?usp=sharing" target="_blank" rel="noopener">
+    <i class="fas fa-file-pdf mr-1"></i>
+    PDF
+  </a>
+
+
+</div>
+
+
+</div>
+
+
+<div class="article-header container featured-image-wrapper mt-4 mb-4" style="max-width: 300px; max-height: 168px;">
+  <div style="position: relative">
+    <img src="/post/cpandl/featured.jpeg" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <h2 id="validity-of-sternbergs-additive-factors-method">Validity of Sternberg’s Additive factors method.</h2>
+<p><strong>The Sternberg Task and Serialisation</strong></p>
+<ul>
+<li>
+<p>The experiment entails memorization of a positive set, a list of items such as numbers or words.</p>
+</li>
+<li>
+<p>The subject is then asked about a particular test item that may or may not have actually been present in the set, and is asked to respond &ldquo;yes&rdquo; or &ldquo;no&rdquo; accordingly.</p>
+</li>
+<li>
+<p>The time taken for the subject to respond is recorded. This process is then repeated over several trials.
+What Sternberg found was that response time tended to increase with the size of the list. This provided evidence for Serial and Exhaustive Search Theory, which proposes that people will search every item in an array without stopping, even if the item was found.</p>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="https://raw.githubusercontent.com/ayushmclaren/ExplainIt/master/ss/Screenshot%202020-12-04%20at%2018.04.34.png" >
+
+
+  <img src="https://raw.githubusercontent.com/ayushmclaren/ExplainIt/master/ss/Screenshot%202020-12-04%20at%2018.04.34.png" alt=""  >
+</a>
+
+
+
+</figure>
+
+<p><strong>Overarching consensus</strong></p>
+<ul>
+<li>
+<p>This is the general underpinning of his additive factors method. This is a method that uses reaction time measured over a range of tasks in order to identify different cognitive processing stages. He argues that the indications for serial processing stages result either from a single processor switching from one to the next processing stage, or from one processor waiting for the output of another processor.</p>
+</li>
+<li>
+<p>Serial processing models have been refuted in the past because they would not acknowledge parallel processes and feedback loops. Also, they would not account for tasks in which stimuli prime response movements in unintended ways (like Stroop task).</p>
+</li>
+</ul>
+<p>Hence, there have been studies that demonstrate additive factors can be successfully accounted for by existing single stage models of the Stroop effect. The Stroop task is ideal for this comparison because it uses both the perceptual representations (perceiving the colour of the word) and  cognitive elements (representation,concept of the words and colours in our mind) to produce a correct response. Hence, if we can show that a discrete model is not necessary or can be accounted for by continuous processes, we essentially argue that a differentiation and demarcation of processing in the brain is not apparent.</p>
+<p>Empirical results of the stroop task as below.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="https://raw.githubusercontent.com/ayushmclaren/ExplainIt/master/ss/Screenshot%202020-12-04%20at%2018.04.39.png" >
+
+
+  <img src="https://raw.githubusercontent.com/ayushmclaren/ExplainIt/master/ss/Screenshot%202020-12-04%20at%2018.04.39.png" alt=""  >
+</a>
+
+
+
+</figure>
+
+<p><strong>The Additive Factors Method</strong></p>
+<p>According to the assumptions of the AFM, independent components – “stages” – of decision making are revealed by the analysis of how different factors affect reaction times. Hence, if change in one factor affects Reaction Times independently of the change of another factor, then it is concluded that the two factors affect different stages of decision making.</p>
+<p>Thus in this way, AFM provides a framework to assess the minimum number of independent processes (or steps) that are involved in decision making. This method has supported the independence of stimulus processing and response selection. However, the AFM method can only point to the algorithmic level of choice reactions, not the implementational level as described in Marr’s Tri-level approach.</p>
+<p><strong>The Additive Factors Method - Assumptions</strong></p>
+<ul>
+<li>
+<p>Measuring a single small unit can be accomplished by measuring a large, known quantity of small units then dividing by the number of units. For example, to measure the thickness of a single sheet of paper with an ordinary ruler, measure the thickness of a stack of paper sheets, then divide by the number of sheets.</p>
+</li>
+<li>
+<p>The total time to complete a response is literally the sum of the times of separate processing steps. Thus, if it takes 200 msec to complete visual decoding, 300 ms to complete scanning, and 500 ms to make a detectable response, the total time to respond is 200 + 300 + 500, or 1000 ms.</p>
+</li>
+<li>
+<p>Some individual processing steps, such as pressing a response key, take the same amount of time regardless of the amount of information to be scanned. For example, if response execution takes 500 ms when scanning 1 item, it should only take 500 ms when scanning 4 items. The times for steps that stay the same can be treated as constants.</p>
+</li>
+</ul>
+<p><em>Basic Critique</em></p>
+<p>Thomas (2006) shows that AFM can predict interaction of factors once reasonable assumptions about the representation is taken into account. In contrast, Parallel Distributed Processing (PDP) framework suggests information being continuously available and interactively processed across multiple locations. McClelland (1979) showed that such a PDP “continuous processing” model could produce results which were consistent with the AFM, despite the lack of the discrete serial modules that the AFM is usually assumed to imply.
+Let us now, come back to the stroop task, compare and contrast the continuous with discrete models to comment on the serialization.</p>
+<p><strong>Continuous Stage Models - Cohen et al</strong></p>
+<p>The basic idea is that to activate an associated response code, a stimulus code needs to be translated into the response (As long as the primary response is not selected).</p>
+<p>The essence of the model is that it evaluates using a distribution network, the word and color information in the stimulus and “responds based on the ink color, ignoring the word”. The weights of these factors and their combination, leads to the response, which signals the selected response. It does this after a certain amount of evidence, from all units in the model, has been accumulated. This model is a continuous processing model. Activity in all parts of the model is continuously updated as the effect of the change in inputs propagates. Although this may have many architectural stages, all components are running simultaneously and passing information without delay to each other.</p>
+<p>Now for Stroop, In this model, the word and color information is represented by 0 or 1 values. The stimulus color, say, was red, the input unit for “red” would be restricted at 1 and the input unit for green would be restricted at 0. To simulate intermediate intensity, values between 0 and 1 were used. Both the color and the word input values were restricted at the same intermediate values, namely 0.2, 0.4, 0.6, 0.8, or 1.0. This reflects the corresponding variation in the strength of the input representation with varying color saturation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="https://raw.githubusercontent.com/ayushmclaren/ExplainIt/master/ss/Screenshot%202020-12-04%20at%2018.05.09.png" >
+
+
+  <img src="https://raw.githubusercontent.com/ayushmclaren/ExplainIt/master/ss/Screenshot%202020-12-04%20at%2018.05.09.png" alt=""  >
+</a>
+
+
+
+</figure>
+
+<p><strong>Discrete Stage Models - Two stage</strong></p>
+<p>A two stage, discrete processing variant of the Cohen model is constructed by adding a  “detection” stage. This stage delays inputs to the second stage and until this output is passed, no other processing can take place.
+The influence of color saturation is incorporated by providing continuously valued inputs to the detection stage only.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="https://raw.githubusercontent.com/ayushmclaren/ExplainIt/master/ss/Screenshot%202020-12-04%20at%2018.05.20.png" >
+
+
+  <img src="https://raw.githubusercontent.com/ayushmclaren/ExplainIt/master/ss/Screenshot%202020-12-04%20at%2018.05.20.png" alt=""  >
+</a>
+
+
+
+</figure>
+
+<p>The interference effect is larger than the facilitation effect across all stimulus intensity values, and that both effects are consistent across all stimulus intensity values.  Note, however, that this is not logically sufficient to justify the inference of discrete stages from additive factors in the response times.</p>
+<p>Note that in accordance with AFM, the stimulus intensity only affects processing in the first stage, and the Stroop condition only affects processing in the second stage.</p>
+<p><strong>Consequences for Decision Making</strong></p>
+<p>The essence is that single stage models of decision making will be useful at the data-descriptive level and for defining optimality, but multistage models will be required to account for experimental situations where decision making departs from optimality. The models presented here suggest that the simple decision making models developed to account for simple perceptual decisions cannot alone be a complete model of decision making. Without assumptions about other elements of perception and action selection, simple response mechanisms are insufficient to account for empirical data once the scope of decision making moves beyond the simple perception.</p>
+<p><strong>Functional vs Structuralist approach to Reaction Times</strong></p>
+<p>When an RT paradigm is used, the experimenter is usually interested in the mechanism that accounts for the time that passes between stimulus and response, commonly denoted by the term latency. It is assumed that this mechanism induces a characteristic, stationary probability distribution on RT. Globally, the various approaches to the decomposition of RT can be reduced to two major trends: the functionalist approach and the structuralist approach.</p>
+<p>The functionalist approach to RT originates in its recent form from the work of Sternberg (1966, 1969). The reasoning behind Sternberg&rsquo;s method is (a) that the stimulus-response process consists of a number of serial stages and (b) that different stages perform different functions. In a way, this approach takes its starting point at the level of studying the effects of various experimental conditions and from there seeks conclusions concerning the components of the stimulus-response process.</p>
+<p>Originally Sternberg (1966, 1969) postulated four stages: stimulus encoding, information processing and evaluation, response decision, and response selection and evocation. Sanders (1980) already postulates six stages based on a review of the RT literature: stimulus preprocessing, feature extraction, identification, response choice, response,programming, and motor adjustment.</p>
+<p>Ideally, a stage has the following four properties: (a) for a given input, the output is unaffected by factors influencing its duration; (b) a stage is a functional entity that is psychologically and qualitatively different from other stages; (c) one stage can process only one signal at a time; (d) stage durations are stochastically independent.</p>
+<p>The main theoretical difference between the functionalist and the structuralist approach lies in the specification of the underlying stochastic mechanism. This mechanism is completely specified in the structuralist approach, whereas in the functionalist approach one only makes some general assumptions regarding the mean and variance of the response process. For this reason, the structuralist approach is also referred to as the model or distributional approach, and the functionalist approach is commonly referred to as stage analysis of RT. The structural approach starts from specific assumptions about the stochastic mechanisms involved and from there derives predictions concerning relevant aspects of the process. In general, the objective of research efforts should be to describe, to predict, and to explain the phenomena we deal with.  The functionalist approach asks essentially: &ldquo;Which variables have an effect, and do they interact?&rdquo; whereas the structuralist or model approach asks: &ldquo;What are the processes involved, and how do the variables affect these processes?&rdquo;</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="https://raw.githubusercontent.com/ayushmclaren/ExplainIt/master/ss/Screenshot%202020-12-04%20at%2018.05.32.png" >
+
+
+  <img src="https://raw.githubusercontent.com/ayushmclaren/ExplainIt/master/ss/Screenshot%202020-12-04%20at%2018.05.32.png" alt=""  >
+</a>
+
+
+
+</figure>
+
+<h2 id="embodied-cognition-and-evolution-of-language">Embodied Cognition and Evolution of Language</h2>
+<p><strong>Historical Overview</strong></p>
+<p>How language conveys meaning remains an open question. The dominant approach is to treat language as a symbol manipulation system: Language conveys meaning by using abstract, amodal, and arbitrary symbols (i.e.words) combined by syntactic rules (e.g. Chomsky,1980; Fodor,2000; Pinker,1994). Words are abstract in that the same word, such as “chair” is used for big chairs and little chairs, words are amodal in that the same word is used when chairs are spoken about or written about, and words are arbitrarily related to their referents in that the phonemic and orthographic characteristics of a word bear no relationship to the physical or functional characteristics of the word’s referent.</p>
+<p>A natural language is a structured symbolic system that involves a systematic mapping between a virtually unbounded set of thoughts and a virtually unbounded set of sounds or manual gestures. Given our limited cognitive abilities, it is common to explain linguistic competence in terms of a ﬁnite set of stored lexical units or complexes and combinatorial principles.</p>
+<p>An alternative view is that linguistic meaning is grounded in bodily activity. Cognitive Linguistics has used the notion of embodiment to explain facts about language since its inception. There have been three distinct phases in the application of the idea of embodiment to empirical work on language and cognition.</p>
+<p>The first was analytical in that it involved linguists − inspired by work in cognitive psychology − looking for evidence of how the conceptual resources that underlie language use might be embodied through analysis of language. Work in this stage produced results that did not speak much to mechanisms, and as a result were equally compatible with the developmental and online types of embodiment.</p>
+<p>The second phase is the process phase, which involved refinement of the online version of embodiment in a way that has generated a new theoretical framework, and inspired a substantial body of empirical work.</p>
+<p>And the third phase is the function phase, in which researchers are refining their tools in an effort to determine exactly what embodiment does for specific aspects of language use and other cognitive operations.</p>
+<p>However, abstract concepts such as DEMOCRACY, ENTROPY, JUSTICE, NUMBER, and TRUTH are a critical issue for embodied cognition because it is difﬁcult to see how they can be captured by representations grounded in sensorimotor systems. There have been notable attempts to address this problem, including appeals to metaphoric extension.</p>
+<p><strong>Metaphors - Could the future taste purple?</strong></p>
+<p>When producing speech, people usually generate an impressive amount of spontaneous gestures, bodily postures, and facial expressions. More precisely, people produce, in a perfectly synchronized manner spontaneous gestures which somehow match the meaning, timing, and form of the oral expressions used.</p>
+<p>For instance, with a hand or a finger, people point towards something in their backs at the very moment when they say ‘all the way back in the thirties’. Or they show something in front of them when saying ‘the days ahead of us’. Therefore, bodily actions (i.e., spontaneous gestures) and speech, not only are coherent, but occur with an impressive synchronicity with speech.</p>
+<p>It has been shown that an important amount of abstract thought is unconscious (i.e. it happens below the level of awareness and therefore is often beyond introspection), and it has shown that concepts are systematically organized through everyday cognitive mechanisms such as conceptual mappings. The most well known conceptual mappings are conceptual metaphors (Lakoff and Johnson, 1980).</p>
+<p>A conceptual metaphor is a cognitive mechanism that allows us to make precise inferences in one domain of experience (target domain) based on the inferences that hold in another domain (source domain). Through this mechanism, the target domain is understood, often unconsciously, in terms of the inferential structure that holds in the source domain. A conceptual metaphor, as understood in cognitive linguistics, does not belong to the realm of words but to the realm of thought. And this is very important to keep in mind: a conceptual metaphor is a cognitive mechanism, an inference-preserving cross-domain mapping. Particularly relevant is the distinction between time-based metaphors and ego-based metaphors.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="https://raw.githubusercontent.com/ayushmclaren/ExplainIt/master/ss/Screenshot%202020-12-04%20at%2018.21.07.png" >
+
+
+  <img src="https://raw.githubusercontent.com/ayushmclaren/ExplainIt/master/ss/Screenshot%202020-12-04%20at%2018.21.07.png" alt=""  >
+</a>
+
+
+
+</figure>
+
+<p><strong>The Blank Screen Paradigm</strong></p>
+<p>The ‘visual world paradigm’ typically involves presenting participants with a visual scene and recording eye movements as they either hear an instruction to manipulate objects in the scene or as they listen to a description of what may happen to those objects. In this study, participants heard each target sentence only after the corresponding visual scene had been displayed and then removed.</p>
+<p>For a scene depicting a man, a woman, a cake, and a newspaper, the eyes were subsequently directed, during ‘eat’  in ‘the man will eat the cake’, towards where the cake had previously been located even though the screen had been blank for over 2 s. The rapidity of these movements mirrored the anticipatory eye movements observed in previous studies. Thus, anticipatory eye movements are not dependent on a concurrent visual scene, but are dependent on a mental record of the scene that is independent of whether the visual scene is still present.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="https://raw.githubusercontent.com/ayushmclaren/ExplainIt/master/ss/Screenshot%202020-12-04%20at%2018.21.20.png" >
+
+
+  <img src="https://raw.githubusercontent.com/ayushmclaren/ExplainIt/master/ss/Screenshot%202020-12-04%20at%2018.21.20.png" alt=""  >
+</a>
+
+
+
+</figure>
+
+<p>Why did the eyes move to a particular location when there was nothing there? One possibility is based on the idea that very little information about one part of a visual scene is maintained internally when the eyes move to another part. Richardson and Spivey (2000) proposed, following O’Regan (1992), that the visual system instead uses the scene itself as an external memory, using oculomotor coordinates (defined relative to the configuration of cues within the scene) as pointers towards this external memory. The activation of these pointers causes the eyes to move to the corresponding coordinate from where information about the contents of that part of the scene can be retrieved.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="https://raw.githubusercontent.com/ayushmclaren/ExplainIt/master/ss/Screenshot%202020-12-04%20at%2018.21.28.png" >
+
+
+  <img src="https://raw.githubusercontent.com/ayushmclaren/ExplainIt/master/ss/Screenshot%202020-12-04%20at%2018.21.28.png" alt=""  >
+</a>
+
+
+
+</figure>
+
+<p>In conclusion: Eye movements that are triggered during linguistic expressions are not contingent on an item being co-present with that expression. Thus, even when the visual scene is concurrent with a linguistic expression that refers to an item within that scene, information about where to move the eyes in order to fixate that item may be based not on the actual location of that item within the scene, but on the location of that item as represented within a mental representation of the scene.</p>
+<p><strong>Grounding Action in Language - Glenberg</strong></p>
+<p>This demonstrates that merely comprehending a sentence that implies action in one direction (e.g.,“Close the drawer” implies action away from the body) interferes with real action in the opposite direction (e.g., movement toward the body). These data are consistent with the claim that language comprehension is grounded in bodily action, and they are inconsistent with abstract symbol theories of meaning.</p>
+<p><em>Experiment :-</em></p>
+<p>Participants were presented with a series of sensible and nonsense sentences, and they were asked to determine as quickly as possible whether each sentence made sense. One independent variable, implied sentence direction (toward/away), was manipulated for the sensible sentences. Thus, toward sentences, such as “Open the drawer” and “Put your finger under your nose”, implied action toward the body. A way sentences, such as “Close the drawer” and “Put your finger under the faucet,” implied action away from the body.</p>
+<p>The nonsense sentences, such as “Boil the air,” did not seem to imply any direction. Note that the participants were never instructed to consider the implied direction; their task was merely to judge sensibility. The actual response direction (yes-is-near/ yes-is-far) was manipulated by using a specially constructed button box.</p>
+<p>According to the study, meaning is action-based: Understanding a toward sentence requires meshing affordances (e.g., of a drawer and the action of opening), resulting in a simulation of actions toward the body, whereas understanding an away sentence results in a simulation of actions moving away from the body. If this simulation requires the same neural systems as the planning and guidance of real action, understanding a toward sentence should interfere with making a movement away from the body to indicate yes (yes-is-far), and vice-versa. This is called the Action Congruency Effect.</p>
+<p>Half of the 80 sensible sentence pairs (toward/away pairs) were in the imperative, such as the examples above. The other half of the sensible sentence pairs described a type of transfer. The concrete transfer pairs described a physical transfer. Half of these used the double-object construction (e.g., “Courtney handed you the notebook/ You handed Courtney the notebook”), and half used the dative form (e.g., “Andy delivered the pizza to you/ You delivered the pizza to Andy”). The 20 abstract transfer pairs described a nonphysical transfer, such as “Liz told you the story/ You told Liz the story” and “The policeman radioed the message to you/You radioed the message to the policeman.”</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="https://raw.githubusercontent.com/ayushmclaren/ExplainIt/master/ss/Screenshot%202020-12-04%20at%2018.21.40.png" >
+
+
+  <img src="https://raw.githubusercontent.com/ayushmclaren/ExplainIt/master/ss/Screenshot%202020-12-04%20at%2018.21.40.png" alt=""  >
+</a>
+
+
+
+</figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="https://raw.githubusercontent.com/ayushmclaren/ExplainIt/master/ss/Screenshot%202020-12-04%20at%2018.21.52.png" >
+
+
+  <img src="https://raw.githubusercontent.com/ayushmclaren/ExplainIt/master/ss/Screenshot%202020-12-04%20at%2018.21.52.png" alt=""  >
+</a>
+
+
+
+</figure>
+
+<p><strong>Inseparability Principle/SLA - Atkinson</strong></p>
+<p>Three SLA principles based on extended, embodied cognition:</p>
+<ul>
+<li>The Inseparability Principle: Mind, body, and world work together in learning/SLA;</li>
+<li>The Learning-is-adaptive Principle: Learning/SLA facilitates survival and prosperity in complex environments; and</li>
+<li>The Alignment Principle: A major engine of learning/SLA is alignment, the means by which we effect interaction.</li>
+</ul>
+<p><strong>The Inseparability Principle and SLA</strong></p>
+<p>Consider four questions vis-a-vis the picture below,</p>
+<ul>
+<li>Who is the person in the picture?</li>
+<li>What is she doing?</li>
+<li>Where and when?</li>
+<li>Why?</li>
+</ul>
+<p>The aim of this exercise is to suggest that SLA is more than just a cognitive input/restructuring/output process, and what some of that ‘more’ may be.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="https://raw.githubusercontent.com/ayushmclaren/ExplainIt/master/ss/Screenshot%202020-12-04%20at%2018.21.58.png" >
+
+
+  <img src="https://raw.githubusercontent.com/ayushmclaren/ExplainIt/master/ss/Screenshot%202020-12-04%20at%2018.21.58.png" alt=""  >
+</a>
+
+
+
+</figure>
+
+<p>This pictorial illustration has three implications for SLA. First, it suggests that people cognize/learn not just mentally, but in environments composed of bodies, cognitive tools, social practices, and environmental features. If, as the inseparability principle argues, such contexts crucially affect cognition/learning, then they cannot be treated as optional extras. Regarding learning this suggests that:</p>
+<ul>
+<li>Learning is more discovering how to align with the world than extracting knowledge from it (Ingold 2000); and</li>
+<li>By being environmentally embedded, knowledge/cognition is made public and thereby learnable.</li>
+</ul>
+<p>The second implication of this illustration concerns the quality of cognition/learning (van Lier 2002). The personal relationships learning involves, its role in identity construction (Norton 2000), where and under whose sponsorship it occurs, and how it is embodied and enacted fundamentally influence its outcome. Unlike computers, humans don’t just process—they find value and meaning. This affects learners’ engagement with learning opportunities, including whether they engage at all.</p>
+<p>Third, if cognition/learning is complex and multimodal, as the illustration suggests, then it must be studied complexly and multimodally.</p>
+<p><strong>The learning-is-adaptive principle and SLA</strong></p>
+<p>The learning-is-adaptive principle has four linked implications for learning/SLA:</p>
+<ul>
+<li>Learning/SLA is relational: Learning-as-adaptive-behavior concerns how to relate—how to articulate with one’s environment.</li>
+<li>Learning/SLA is experiential, participatory, and guided: One learns to relate by relating - learning is experiential.</li>
+<li>Learning/SLA is public: One crucial way learning is guided is by externalizing its object while focusing the learner’s attention (Schmidt 2001) on it.</li>
+<li>Learning/SLA is aligning, and learning to align: This final point summarizes the preceding three: Learning is a process of alignment—of continuously and progressively fitting oneself to one’s environment, often with the help of guides.</li>
+</ul>
+<p><strong>The alignment principle and SLA</strong></p>
+<p>First, it means having formidable pre-existing capacities for interacting without necessarily sharing a language. That is, all language learners have powerful interaction engines supporting their learning at every turn.</p>
+<p>Second, SLA itself is a process of alignment—of learning the ‘differences that make a difference’ (Bateson 1972: 459) in the L2 environment. This is what our guides teach us as we engage with the environment: A requisite idiom or formula here, a form-function relationship there—to do that, you need to say this. By trying to align with our environment—by learning to behave in eco socially adaptive ways—we become ‘enskilled’ (Ingold 2000: 5).</p>
+<p>Third, as noted above, alignment has a public face: Our aligning/learning behaviors extend into the world, and as our guides facilitate and respond to them, alignment is further externalized.
+Ultimately, sociocognitive approaches to SLA are based on this tripartite premise: (i) Mind, body, and world are in continuous processes of interactive alignment; (ii) These processes are partly public; and (iii) In being public, they are learnable. Thus, if cognition is the site of learning, it is extended, embodied cognition that makes learning possible, at least in part.</p>
+
+    </div>
+
+    
+
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/psychology/">Psychology</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://ayushmclaren.github.io/post/cpandl/&amp;text=On%20concept,%20perception%20and%20language" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://ayushmclaren.github.io/post/cpandl/&amp;t=On%20concept,%20perception%20and%20language" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=On%20concept,%20perception%20and%20language&amp;body=https://ayushmclaren.github.io/post/cpandl/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://ayushmclaren.github.io/post/cpandl/&amp;title=On%20concept,%20perception%20and%20language" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=On%20concept,%20perception%20and%20language%20https://ayushmclaren.github.io/post/cpandl/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://ayushmclaren.github.io/post/cpandl/&amp;title=On%20concept,%20perception%20and%20language" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://ayushmclaren.github.io"><img class="avatar mr-3 avatar-circle" src="/author/ayush-agarwal/avatar_hu556e2246a977c659612b66eb6cccab35_1779577_270x270_fill_lanczos_center_2.png" alt="Ayush Agarwal"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://ayushmclaren.github.io">Ayush Agarwal</a></h5>
+      <h6 class="card-subtitle">Statistics | Finance | Psychology | Music | Cars | Photography</h6>
+      <p class="card-text">My research interests include Markov Chains, Bayesian Statistics and Time series.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="http://www.linkedin.com/in/ayushmclaren/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.facebook.com/ayush.mclarenp1/" target="_blank" rel="noopener">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="http://github.com/ayushmclaren/" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/post/obedience/">Frailty of the human mind : The devil’s obedience</a></li>
+      
+      <li><a href="/post/pessimism/">The case for Pessimism and the half empty glass</a></li>
+      
+      <li><a href="/post/embodied/">On embodied cognition</a></li>
+      
+      <li><a href="/post/happiness-is-a-choice/">Is Happiness a choice?</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    © Ayush Agarwal 2020
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+    Published with
+    <a href="https://wowchemy.com" target="_blank" rel="noopener">Wowchemy</a>  —
+    the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">
+    open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/wowchemy.min.ca606e186e454568cb2c38dc46dfab45.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>
