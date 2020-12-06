@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Recent &amp; Upcoming Talks | Ayush Agarwal</title>
+    <link>https://ayushmclaren.github.io/talk/</link>
+      <atom:link href="https://ayushmclaren.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
+    <description>Recent &amp; Upcoming Talks</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Ayush Agarwal 2020</copyright><lastBuildDate>Wed, 04 Mar 2020 17:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://ayushmclaren.github.io/images/icon_hue43616ef14598f21e832a95090661ad2_140522_512x512_fill_lanczos_center_2.png</url>
+      <title>Recent &amp; Upcoming Talks</title>
+      <link>https://ayushmclaren.github.io/talk/</link>
+    </image>
+    
+    <item>
+      <title>Adaptive Metropolis–Hastings methods</title>
+      <link>https://ayushmclaren.github.io/talk/mh/</link>
+      <pubDate>Wed, 04 Mar 2020 17:00:00 +0000</pubDate>
+      <guid>https://ayushmclaren.github.io/talk/mh/</guid>
+      <description>&lt;div class=&#34;responsive-wrap&#34;&gt;
+  &lt;iframe src=&#34;https://docs.google.com/presentation/d/e/2PACX-1vQM2VNyJi6bkjDqCZ_X6eW96_wsXyOIvVh8x7A-nksFhfNb3brnZFuVRUvrqwFxOQbRe7M-R57Zos2m/embed?start=false&amp;amp;loop=true&amp;amp;delayms=30000&#34; frameborder=&#34;0&#34; width=&#34;960&#34; height=&#34;569&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Is Happiness a choice?</title>
+      <link>https://ayushmclaren.github.io/talk/happiness/</link>
+      <pubDate>Sun, 14 Apr 2019 17:00:00 +0000</pubDate>
+      <guid>https://ayushmclaren.github.io/talk/happiness/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
